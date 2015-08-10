@@ -1,0 +1,47 @@
+File Manifest for ICPSR 3418
+
+United States Department of Justice. Bureau of Justice Statistics. National
+Prosecutors Survey [Census], 2001. ICPSR03418-v1. Ann Arbor, MI: Inter-
+university Consortium for Political and Social Research [distributor],
+2002. http://doi.org/10.3886/ICPSR03418.v1
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    03418-related_literature.txt        -       -         -       2015-08-02  -
+
+    03418-manifest.txt                  -       -         -       2015-08-03  -
+
+
+DS0001 National Prosecutors Survey [Census], 2001
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    03418-0001-Codebook.pdf             -       -         -       2002-07-02  081072f6fd014c4f4b3b1f1176bada79
+
+    03418-0001-Data.por                 -       2,341     229     2005-03-10  b4d48e596e031d9748f408f1113d5f3e
+
+    03418-0001-Data.txt                 1045    2,341     229     2002-07-02  747809e1738067a18ddf09dc46a4cebc
+
+    03418-0001-Data.xpt                 -       2,341     229     2005-03-10  02e87a597189549c7bc12a0e0ce23d47
+
+    03418-0001-Setup.sas                -       -         -       2002-07-02  7a56c82efeb2561d99e121c0489f86b1
+
+    03418-0001-Setup.sps                -       -         -       2002-07-02  83d8dc3145b368bbcf4e9d1ea007fbc4
+
+    03418-0001-Supplemental_syntax.sas  -       -         -       2005-03-10  754fb6a14a5df4600fd56188013b3d0b
+
+
+Version History
+
+2005-11-04  On 2005-03-14 new files were added to one  or  more datasets.
+These files included additional setup files as well  as one or more of the
+following: SAS  program, SAS transport, SPSS portable,   and Stata system
+files. The  metadata record was revised  2005-11-04 to  reflect these
+additions.

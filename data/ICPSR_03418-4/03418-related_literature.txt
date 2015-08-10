@@ -1,0 +1,101 @@
+Bibliography
+National Prosecutors Survey [Census], 2001
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 3418. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. This list represents all items known
+to ICPSR as of 2015-08-03.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+bibliography@icpsr.umich.edu.
+
+
+1. Baicker, Katherine, "The budgetary repercussions of capital
+convictions." Advances in Economic Analysis and Policy. Aug 2004, 4,. DOI:
+10.2202/1538-0637.1311
+
+2. Buzzell, Timothy, "The effects of organizational and community context
+on local prosecution of computer child pornography cases." Criminal Justice
+Studies. Dec 2007, 40, (4), 391 - 405. DOI: 10.1080/14786010701758179
+
+3. Byers, Bryan D.; Warren-Gordon, Kiesha; Jones, James A., "Predictors of
+hate crime prosecutions: An analysis of data from the National Prosecutors
+Survey and state-level bias crime laws." Race and Justice. Jul 2012, 2,
+(3), 203 - 219. DOI: 10.1177/2153368712446868
+
+4. Cunningham, William Scott; Renauer, Brian C.; Khalifa, Christy, "Sharing
+the keys to the courthouse: Adoption of community prosecution by state
+court presecutors." Journal of Contemporary Criminal Justice. Aug 2006, 22,
+(3), 202 - 219. DOI: 10.1177/1043986206292363
+
+5. DeFrances, Carol J., "Prosecutors in State Courts, 2001." NCJ 193441,
+Washington, DC: United States Department of Justice, Bureau of Justice
+Statistics, May 2002.
+Abstract: http://www.bjs.gov/content/abstract/psc01.htm
+Full text: http://www.bjs.gov/content/pub/ascii/psc01.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/psc01.pdf
+This report presents findings from the 2001 National Survey of Prosecutors,
+which was a census of all 2,341 prosecutors' offices that tried felony
+cases in State courts of general jurisdiction.
+
+6. DeFrances, Carol J., "State Court Prosecutors in Large Districts, 2001."
+NCJ 191206, Washington, DC: United States Department of Justice, Bureau of
+Justice Statistics, Dec 2001.
+Abstract: http://www.bjs.gov/content/abstract/scpld01.htm
+Full text: http://www.bjs.gov/content/pub/ascii/scpld01.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/scpld01.pdf
+This Bureau of Justice Statistics' report presents data from the 2001
+National Survey of Prosecutors (NSP).
+
+7. DeFrances, Carol J., "State Court Prosecutors in Small Districts, 2001."
+NCJ 196020, Washington, DC: United States Department of Justice, Bureau of
+Justice Statistics, Jan 2003.
+Abstract: http://www.bjs.gov/content/abstract/scpsd01.htm
+Full text: http://www.bjs.gov/content/pub/ascii/scpsd01.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/scpsd01.pdf
+Presents results from the 2001 National Survey of Prosecutors (NSP), which
+collected data on all chief prosecutors that handled felony cases in State
+courts of general jurisdiction. The report covers prosecutor's offices that
+served a district with less than 250,000 population.
+
+8. Giblin, Matthew J., "Understanding Influence Across Justice Agencies:
+The Spread of 'Community Reforms' from Law Enforcement to Prosecutor
+Organizations." Final Report. NCJ 245945, Carbondale, IL: Southern Illinois
+University, Mar 2014. 2012-R2-CX-0022
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+9. Haynes, Stacy Hoskins, "The effects of victim-related contextual factors
+on the criminal justice system." Crime and Delinquency. Mar 2011, 57, (2),
+298 - 328. DOI: 10.1177/0011128710372190
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+10. King, Ryan D.; Messner, Steven F.; Baller, Robert D., "Contemporary
+hate crimes, law enforcement and the legacy of racial violence." American
+Sociological Review. Apr 2009, 74, (2), 291 - 315. DOI:
+10.1177/000312240907400207
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+11. Owens, Emily G., "Media and the Criminal Justice System." Jun 2010..
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+12. Raghav, Manu, "Theoretical and Empirical Analysis of Issues Concerning
+the State Prosecutors." Indiana University, 2007.
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+13. Raghav, Manu, "Why do budgets received by state prosecutors vary across
+districts in the United States?." CAEPR Working Paper. #2006-018, Indiana
+University Bloomington, Center for Applied Economics and Policy Research,
+Nov 20, 2006.
+Abstract: http://ssrn.com/abstract=946233
+
+14. Rasmusen, Eric; Raghav, Manu; Ramseyer, Mark, "Convictions versus
+conviction rates: The prosecutor's choice." American Law and Economics
+Review. Spr 2009, 11, (1), 47 - 78. DOI: 10.1093/aler/ahp007
+Abstract: http://ssrn.com/abstract=946233
+
+15. Snyder, Howard N.; Sickmund, Melissa, "Juvenile Offenders and Victims."
+1999 National Report. NCJ 178257, Washington, DC: United States Office of
+Juvenile Justice and Delinquency Prevention, 1999.
+Abstract: http://www.ncjrs.gov/html/ojjdp/nationalreport99/toc.html
