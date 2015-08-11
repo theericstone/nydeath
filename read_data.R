@@ -129,12 +129,12 @@ rect_dat <- data.table( start = 1995, end_1 = 2004, end_2 = 2007 )
 ggplot( murders.charges[,list(n_murders = sum(n_murders),
                               n_pleas = sum(convicted_plea),
                               n_dispos = sum(total_dispositions)),
-                        by="year,nyc,charge"][
+                        by="year,death_status,nyc,charge"][
                           ,per_pleas := n_pleas / n_dispos ],
         aes(x = year, y = per_pleas, color = charge, fill = charge )) +
-  geom_smooth( size = 1.8, se = FALSE ) +
+  geom_smooth( aes(group = death_status), size = 1.8, se = FALSE ) +
   geom_point( size = 2.6, alpha = .7) +
-  facet_grid( ~ nyc ) +
+  #facet_grid( ~ nyc ) +
   geom_rect(data=rect_dat, aes(xmin=start, xmax=end_1), 
             ymin=0, ymax=15, alpha=0.3, fill="grey60", inherit.aes = FALSE) +
   geom_rect(data=rect_dat, aes(xmin=end_1, xmax=end_2), 
