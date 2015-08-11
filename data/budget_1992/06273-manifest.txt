@@ -1,0 +1,55 @@
+File Manifest for ICPSR 6273
+
+United States Department of Justice. Bureau of Justice Statistics. National
+Prosecutors Survey, 1992. ICPSR06273-v1. Ann Arbor, MI: Inter-university
+Consortium for Political and Social Research [distributor], 1994.
+http://doi.org/10.3886/ICPSR06273.v1
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06273-related_literature.txt        -       -         -       2015-08-09  -
+
+    06273-manifest.txt                  -       -         -       2015-08-10  -
+
+
+DS0001 Main Data File
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06273-0001-Codebook.txt             -       -         -       1996-03-31  8f9595689d436d1ca7981df78fa55688
+
+    06273-0001-Data.por                 -       271       448     2005-03-10  0387be684de9f359b13223788b978ec2
+
+    06273-0001-Data.txt                 670     271       448     1996-03-31  29e82f402d5a4be11b617dfe3774c1f8
+
+    06273-0001-Data.xpt                 -       271       448     2005-03-10  6f48d3cc19a5a94225bbeae64f5cbe85
+
+    06273-0001-Setup.sas                -       -         -       2005-03-10  24ef3f9e32e3fa27e66a376deeff0df6
+
+    06273-0001-Setup.sps                -       -         -       1996-03-31  81fba7d25b6415934d6652361680946d
+
+    06273-0001-Supplemental_syntax.sas  -       -         -       2005-03-10  b8825a8c651e068b3f25824d731b9bb7
+
+
+DS0002 SAS Data Definition Statements
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    06273-0002-Setup.sas                -       -         -       1997-06-03  2c82721e06475cdcdaa551396079f3a8
+
+
+Version History
+
+2005-11-04  On 2005-03-14 new files were added to one  or  more datasets.
+These files included additional setup files as well  as one or more of the
+following: SAS  program, SAS transport, SPSS portable,   and Stata system
+files. The  metadata record was revised  2005-11-04 to  reflect these
+additions.

@@ -1,0 +1,67 @@
+Bibliography
+National Prosecutors Survey, 1994
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 6785. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. This list represents all items known
+to ICPSR as of 2015-08-10.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+bibliography@icpsr.umich.edu.
+
+
+1. Buzawa, Eve Schlesinger; Buzawa, Carl G. (eds.), Do Arrests and
+Restraining Orders Work?. Thousand Oaks, CA: Sage Publications, 1996.
+
+2. DeFrances, Carol J.; Smith, Steven K.; van der Does, Louise,
+"Prosecutors in State Courts, 1994." NCJ 151656, United States Department
+of Justice, Bureau of Justice Statistics, Oct 1996.
+Abstract: http://www.bjs.gov/content/abstract/pisc94.htm
+Full text: http://www.bjs.gov/content/pub/ascii/pisc94.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/pisc94.pdf
+Presents findings from the 1994 National Prosecutor Survey Program, a
+series of biennial sample surveys of the Nation's 2,300 State court
+prosecutors.
+
+3. DeFrances, Carol J.; Strom, Kevin J., "Juveniles Prosecuted in State
+Criminal Court." NCJ 164265, United States Department of Justice, Bureau of
+Justice Statistics, Mar 1997.
+Abstract: http://www.bjs.gov/content/abstract/jpscc.htm
+Full text: http://www.bjs.gov/content/pub/ascii/jpscc.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/jpscc.pdf
+Presents findings from the 1994 BJS National Survey of Prosecutors and
+other BJS statistical series, as well as data collected by the National
+Center for Juvenile Justice on juveniles proceeded against in State
+criminal courts.
+
+4. King, Ryan D., "The Organizational Context of Hate Crime Prosecutions."
+Society for the Study of Social Problems, 2001.
+Abstract: http://www.bjs.gov/content/abstract/jpscc.htm
+Full text: http://www.bjs.gov/content/pub/ascii/jpscc.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/jpscc.pdf
+Presents findings from the 1994 BJS National Survey of Prosecutors and
+other BJS statistical series, as well as data collected by the National
+Center for Juvenile Justice on juveniles proceeded against in State
+criminal courts.
+
+5. Knox, George W.; Martin, Brad; Tromanhauser, Edward D., "Preliminary
+results of the 1995 National Prosecutor's Survey." Journal of Gang
+Research. Win 1995, 2, (4), 71 -.
+Abstract: http://www.bjs.gov/content/abstract/jpscc.htm
+Full text: http://www.bjs.gov/content/pub/ascii/jpscc.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/jpscc.pdf
+Presents findings from the 1994 BJS National Survey of Prosecutors and
+other BJS statistical series, as well as data collected by the National
+Center for Juvenile Justice on juveniles proceeded against in State
+criminal courts.
+
+6. Owens, Emily G., "Media and the Criminal Justice System." Jun 2010..
+Abstract: http://www.bjs.gov/content/abstract/jpscc.htm
+Full text: http://www.bjs.gov/content/pub/ascii/jpscc.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/jpscc.pdf
+Presents findings from the 1994 BJS National Survey of Prosecutors and
+other BJS statistical series, as well as data collected by the National
+Center for Juvenile Justice on juveniles proceeded against in State
+criminal courts.

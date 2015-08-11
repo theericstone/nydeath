@@ -1,0 +1,51 @@
+File Manifest for ICPSR 4600
+
+United States Department of Justice. Bureau of Justice Statistics. National
+Prosecutors Survey, 2005. ICPSR04600-v1. Ann Arbor, MI: Inter-university
+Consortium for Political and Social Research [distributor], 2007-02-23.
+http://doi.org/10.3886/ICPSR04600.v1
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    04600-related_literature.txt        -       -         -       2015-08-09  -
+
+    04600-manifest.txt                  -       -         -       2015-08-10  -
+
+
+DS0001 National Prosecutors Survey, 2005
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    04600-0001-Codebook.pdf             -       -         -       2007-02-23  a85572317bed47b161ccfb5400b8cb9a
+
+    04600-0001-Data.dta                 -       307       216     2007-01-17  d454444423a96352aedd9da002879c57
+
+    04600-0001-Data.por                 -       307       216     2007-01-17  15cf1f70181fce910321e8ba678c7700
+
+    04600-0001-Data.txt                 2895    307       216     2007-01-17  ddb1d5ea949af910154e1158c6c43bad
+
+    04600-0001-Data.xpt                 -       307       216     2007-01-17  e39959f1adb5a79c8779371c5eb8f568
+
+    04600-0001-Setup.dct                -       -         -       2007-01-17  d5698c28469e95ad1935262ff8cc1924
+
+    04600-0001-Setup.do                 -       -         -       2007-01-17  2d9428d7cd6a0039f0045189390009e3
+
+    04600-0001-Setup.sas                -       -         -       2007-01-17  bbcd0507cc5090523034eb4c6737122e
+
+    04600-0001-Setup.sps                -       -         -       2007-01-17  27f5e7df9666711957b4d0378213077c
+
+    04600-0001-Supplemental_syntax.do   -       -         -       2007-01-17  16601359ee01d16140cb09ba83fd6e70
+
+    04600-0001-Supplemental_syntax.sas  -       -         -       2007-01-17  f947f050da57573ed5d323910c7ada57
+
+
+Version History
+
+2007-02-23 An error in the codebook has been corrected.

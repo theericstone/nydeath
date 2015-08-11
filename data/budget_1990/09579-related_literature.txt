@@ -1,0 +1,31 @@
+Bibliography
+National Prosecutors Survey, 1990
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 9579. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. This list represents all items known
+to ICPSR as of 2015-08-10.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+bibliography@icpsr.umich.edu.
+
+
+1. (author unknown), "National Prosecutor Survey, 1990." United States
+Department of Justice, Bureau of Justice Statistics, unknown date.
+
+2. (author unknown), "Report to the nation on crime and justice." NCJ
+105506, Washington, DC: United States Department of Justice, Bureau of
+Justice Statistics, Mar 1988.
+
+3. Baumer, Eric P.; Messner, Steven F.; Felson, Richard B., "The role of
+victim characteristics in the disposition of murder cases." Justice
+Quarterly. Jun 2000, 17, (2), 281 - 307. DOI: 10.1080/07418820000096331 NCJ
+183237
+Abstract: http://www.ncjrs.gov/App/publications/abstract.aspx?ID=183237
+
+4. Dawson, John M., "Prosecutors in State Courts: 1990." NCJ 134500,
+Washington, DC: United States Department of Justice, Bureau of Justice
+Statistics, Mar 1992.
+Abstract: http://www.ncjrs.gov/App/publications/abstract.aspx?ID=183237

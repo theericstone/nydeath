@@ -1,0 +1,32 @@
+Bibliography
+National Prosecutors Survey, 2005
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 4600. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. This list represents all items known
+to ICPSR as of 2015-08-10.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+bibliography@icpsr.umich.edu.
+
+
+1. Giblin, Matthew J., "Understanding Influence Across Justice Agencies:
+The Spread of 'Community Reforms' from Law Enforcement to Prosecutor
+Organizations." Final Report. NCJ 245945, Carbondale, IL: Southern Illinois
+University, Mar 2014. 2012-R2-CX-0022
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+2. Owens, Emily G., "Media and the Criminal Justice System." Jun 2010..
+Full text PDF: https://www.ncjrs.gov/pdffiles1/nij/grants/245945.pdf
+
+3. Perry, Steven W., "Prosecutors in State Courts, 2005." Bulletin:
+National Survey of Prosecutors. NCJ  213799, Washington, DC: United States
+Department of Justice, Bureau of Justice Statistics, Jul 2006.
+Full text: http://www.bjs.gov/content/pub/ascii/psc05.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/psc05.pdf
+Presents findings from the 2005 National Survey of Prosecutors, the latest
+in a series of data collections about the nation's 2,300 state court
+prosecutors' offices that tried felony cases in state courts of general
+jurisdiction.

@@ -1,0 +1,41 @@
+Bibliography
+National Prosecutors Survey, 1992
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 6273. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. This list represents all items known
+to ICPSR as of 2015-08-10.
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+bibliography@icpsr.umich.edu.
+
+
+1. Davison, John M.; Smith, Steven K.; DeFrances, Carol J., "Prosecutors in
+State Courts, 1992." NCJ 145319, United States Department of Justice,
+Bureau of Justice Statistics, Dec 1993.
+Abstract: http://www.bjs.gov/content/abstract/pisc92.htm
+Full text: http://www.bjs.gov/content/pub/ascii/pisc92.txt
+Presents findings from the 1992 National Prosecutor Survey Program, a
+series of biennial sample surveys of the Nation's 2,300 State court
+prosecutors.
+
+2. Dawson, John M.; Smith, Steven K.; DeFrances, Carol J., "Prosecutors in
+State Courts, 1992." Bulletin. NCJ 145319, Washington, DC: United States
+Department of Justice, Bureau of Justice Statistics, Dec 1993.
+Abstract: http://www.bjs.gov/content/abstract/pisc92.htm
+Full text: http://www.bjs.gov/content/pub/ascii/pisc92.txt
+Presents findings from the 1992 National Prosecutor Survey Program, a
+series of biennial sample surveys of the Nation's 2,300 State court
+prosecutors.
+
+3. Smith, Steven K.; DeFrances, Carol J., "Indigent Defense." Bureau of
+Justice Statistics Selected Findings. NCJ 158909, Washington, DC: United
+States Department of Justice, Bureau of Justice Statistics, Feb 1996.
+Abstract: http://www.bjs.gov/content/abstract/id.htm
+Full text: http://www.bjs.gov/content/pub/ascii/id.txt
+Full text PDF: http://www.bjs.gov/content/pub/pdf/id.pdf
+This report of presented selected findings drawn from various BJS surveys
+contains information related to the defense of indigent criminal
+defendants.

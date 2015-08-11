@@ -1,0 +1,64 @@
+File Manifest for ICPSR 9579
+
+United States Department of Justice. Bureau of Justice Statistics. National
+Prosecutors Survey, 1990. ICPSR09579-v1. Ann Arbor, MI: Inter-university
+Consortium for Political and Social Research [distributor], 1997.
+http://doi.org/10.3886/ICPSR09579.v1
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09579-related_literature.txt        -       -         -       2015-08-09  -
+
+    09579-manifest.txt                  -       -         -       2015-08-10  -
+
+
+DS0001 National Prosecutors Survey, 1990
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09579-0001-Codebook.txt             -       -         -       1997-09-16  e41b7b96054d8c3ac65f1410d875fceb
+
+    09579-0001-Data.dta                 -       300       171     2005-03-11  82c9d90ff726ea4e6d72feab2d2b31f6
+
+    09579-0001-Data.por                 -       300       171     2005-03-11  df1f97c8e11a2e46dc52ef0078d596ac
+
+    09579-0001-Data.txt                 309     300       171     1996-06-10  42a3537bf79119d49c92419cf6b6e8d8
+
+    09579-0001-Data.xpt                 -       300       171     2005-03-11  814403b102552dfa49d23e43187b1db3
+
+    09579-0001-Setup.dct                -       -         -       2005-03-11  8a001181bfa3de7e25bad57565ccb5a1
+
+    09579-0001-Setup.do                 -       -         -       2005-03-11  51604b797e852b13429d5685d34dbb4f
+
+    09579-0001-Setup.sas                -       -         -       1997-09-16  720f91b3abaef1de0e80229fc71d863f
+
+    09579-0001-Setup.sps                -       -         -       1997-09-16  91da0f2b28cbd9c4b1a50dd5a6d55f5f
+
+    09579-0001-Supplemental_syntax.do   -       -         -       2005-03-11  8f4db1607ab203e9a7cd488566ec166d
+
+    09579-0001-Supplemental_syntax.sas  -       -         -       2005-03-11  44684aef068f807a3813486e25be1c4d
+
+
+DS0002 Frequencies
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    09579-0002-Frequencies.txt          -       -         -       1997-06-03  0cf1f824f9ecd18ddc4de8271a55fefc
+
+
+Version History
+
+2005-11-04  On 2005-03-14 new files were added to one  or  more datasets.
+These files included additional setup files as well  as one or more of the
+following: SAS  program, SAS transport, SPSS portable,   and Stata system
+files. The  metadata record was revised  2005-11-04 to  reflect these
+additions.  1997-09-19 SAS data definition statements have been added to
+this collection, and the SPSS data definition statements were updated.
