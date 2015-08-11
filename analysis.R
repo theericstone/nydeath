@@ -3,7 +3,7 @@ library(data.table)
 library(ggplot2)
 
 source("util_functions.R")
-murder <- fread("ny_murder_data.csv")
+murder <- fread("data/ny_murder_data.csv")
 murder.melt <- MeltDataTable(murder,
                              variable.name="outcome", value.name="n_cases",
                              id.vars=c("year","death_penalty_illegal","death_penalty_moratorium","death_status","dispositions_total"))

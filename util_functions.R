@@ -105,3 +105,24 @@ BootStrap <- function(fcasts, n.rep = 500, statistic = list(mean, var)){
   boot.straps <- apply(boots, 2, as.numeric)
   return(data.table(boot.straps))
 }
+
+#replace any value with another one in a data.table
+ReplaceValues <- function(table = dt,
+                          from = NA,
+                          to = 0,
+                          columns = "all.vars"){
+  if(columns[[1]] == "all.vars"){ 
+    which.cols <- seq_len(ncol(table))
+  } else {
+    which.cols <- which(names(table) %in% columns)
+  }
+  
+  if(is.na(from)){
+    for (j in which.cols)
+      set(table,which(is.na(table[[j]])),j,to)
+  } else {
+    for (j in which.cols)
+      set(table,which(table[[j]] == from),j,to)
+  }
+}
+
