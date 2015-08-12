@@ -134,7 +134,7 @@ ggplot( murders.charges[,list(n_murders = sum(n_murders),
                         by="year,zone,nyc,charge"][
                           ,per_pleas := n_pleas / n_dispos ],
         aes(x = year, y = per_pleas, color = charge )) +
-  geom_smooth( aes(group = zone), size = 1.8, se = FALSE, method = "lm" ) +
+  geom_smooth( aes(group = zone), size = 1.8, se = TRUE, method = "lm" ) +
   geom_point( size = 2.6, alpha = .7) +
   facet_grid( nyc ~ charge ) +
   geom_rect(data=rect_dat, aes(xmin=start, xmax=end_1), 
@@ -148,3 +148,36 @@ ggplot( murders.charges[,list(n_murders = sum(n_murders),
          axis.text = element_text(size = 11),
          axis.title = element_text(size = 13),
          legend.title = element_blank()) 
+
+#add some variables
+plea.data <- 
+  murders.charges[ charge == "murder_1",
+                   list(per_plea_m1 = sum(convicted_plea) / sum(total_dispositions)),
+                   by="year,nyc,death_status"][ !is.nan(per_plea_m1) ]
+hist(plea.data$per_plea_m1)
+plea.model <- aov( per_plea_m1 ~ death_status * nyc, data = plea.data )
+plot(plea.model)
+summary(plea.model)
+TukeyHSD(aov(per_plea_m1 ~ death_status * nyc, data = plea.data))
+
+#total pleas that are for murder 1
+total.pleas <-
+  merge(
+    murders.charges[,list(total_dispos = sum(total_dispositions)),
+                    by="year,nyc,death_status"],
+    murders.charges[charge == "murder_1",
+                    list(murder_1_pleas = sum(convicted_plea)),
+                    by="year,nyc,death_status"],
+    by=c("year","nyc","death_status")
+  )[,per_murder_1_total := murder_1_pleas / total_dispos ]
+
+total.model <- aov(per_murder_1_total ~ year * death_status,
+                   data = total.pleas )
+plot(total.model)
+summary(total.model)
+ggplot(total.pleas, aes(x = year, y = per_murder_1_total)) +
+  geom_point( size = 3, alpha = .8) +
+  geom_rect(data=rect_dat, aes(xmin=start, xmax=end_1), 
+            ymin=0, ymax=15, alpha=0.3, fill="grey60", inherit.aes = FALSE) +
+  geom_rect(data=rect_dat, aes(xmin=end_1, xmax=end_2), 
+            ymin=0, ymax=15, alpha=0.3, fill="grey80", inherit.aes = FALSE)
