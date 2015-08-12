@@ -126,21 +126,23 @@ murders.charges$nyc <- factor(murders.charges$nyc, levels = c(TRUE,FALSE),
                               labels = c("New York City","Other Districts"))
 library(ggplot2)
 rect_dat <- data.table( start = 1995, end_1 = 2004, end_2 = 2007 )
+murders.charges[ ,zone := if(year < 1995) "pre" else if(year < 2006) "during" else "post",
+                by = year]
 ggplot( murders.charges[,list(n_murders = sum(n_murders),
                               n_pleas = sum(convicted_plea),
                               n_dispos = sum(total_dispositions)),
-                        by="year,death_status,nyc,charge"][
+                        by="year,zone,nyc,charge"][
                           ,per_pleas := n_pleas / n_dispos ],
-        aes(x = year, y = per_pleas, color = charge, fill = charge )) +
-  geom_smooth( aes(group = death_status), size = 1.8, se = FALSE ) +
+        aes(x = year, y = per_pleas, color = charge )) +
+  geom_smooth( aes(group = zone), size = 1.8, se = FALSE, method = "lm" ) +
   geom_point( size = 2.6, alpha = .7) +
-  #facet_grid( ~ nyc ) +
+  facet_grid( nyc ~ charge ) +
   geom_rect(data=rect_dat, aes(xmin=start, xmax=end_1), 
             ymin=0, ymax=15, alpha=0.3, fill="grey60", inherit.aes = FALSE) +
   geom_rect(data=rect_dat, aes(xmin=end_1, xmax=end_2), 
             ymin=0, ymax=15, alpha=0.3, fill="grey80", inherit.aes = FALSE) +
   ylab("Percent of Dispositions Resulting in Plea") +
-  theme( legend.position = "top",
+  theme( legend.position = "none",
          panel.background = element_blank(),
          axis.ticks = element_blank(),
          axis.text = element_text(size = 11),
