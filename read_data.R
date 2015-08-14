@@ -5,12 +5,18 @@ library(data.table)
 library(plyr)
 library(reshape2)
 library(stringr)
+library(zoo)
 source("util_functions.R")
 
 # read the csv data in
 charges <- data.table(read.csv("data/charges.csv"))
 murders <- data.table(read.csv("data/murders.csv"))
 dp.status <- data.table(read.csv("data/death_penalty_legality_ny.csv"))
+pleas   <- data.table(read.csv("data/pleas.csv"))
+#fill down the county name
+pleas$region <- paste(pleas$region)
+ReplaceValues( pleas, "", NA, "region")
+pleas[ ,region := na.locf(region) ]
 
 # read the .txt data
 size.budget.01 <- rbindlist(lapply(readLines(
@@ -103,10 +109,30 @@ murders <- melt(murders,
 murders[ ,year_num := as.numeric(substr(year,2,5)) ]
 murders$year <- NULL; setnames(murders, "year_num", "year")
 
+#aaaand the pleas frame (get it? pleas frame doo do-do do. do. do. do...)
+pleas <- melt(pleas,
+              id.vars = c("charge","region","conviction"),
+              value.name = "n_dispositions",
+              variable.name = "year")[
+                !region %in% c("New York City","Rest of State","New York State")
+              ]
+pleas[ ,year_num := as.numeric(substr(year,2,5)) ]
+pleas$year <- NULL; setnames(pleas, "year_num", "year")
+pleas <- dcast.data.table(pleas,
+                          charge + region + year ~ conviction,
+                          value.var = "n_dispositions" )
+setnames(pleas,
+         c("other","same","total"),
+         c("pleas_other","pleas_same","total_pleas"))
+
 #merge em together!
-murders.charges <- merge(murders,
-                         charges,
-                         by=c("region","year"))
+murders.charges <- merge(
+  murders,
+  merge(charges,
+        pleas,
+        by = c("region","year","charge")),
+  by=c("region","year"),
+  all = TRUE )
 ReplaceValues(murders.charges, NA, 0,
               columns = names(murders.charges)[5:ncol(murders.charges)])
 
