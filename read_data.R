@@ -127,14 +127,14 @@ setnames(pleas,
 
 #merge em together!
 murders.charges <- merge(
-  murders,
   merge(charges,
         pleas,
         by = c("region","year","charge")),
+  murders,
   by=c("region","year"),
   all = TRUE )
 ReplaceValues(murders.charges, NA, 0,
-              columns = names(murders.charges)[5:ncol(murders.charges)])
+              columns = names(murders.charges)[4:ncol(murders.charges)])
 
 #put in an indicator for which years were death penalty ones
 murders.charges <- merge(
@@ -147,6 +147,7 @@ murders.charges <- merge(
 )
 
 murders.charges[ convicted_verdict == 1 & charge == "murder_1", .N, by="year,death_status"]
+
 murders.charges[ ,nyc := region %in% c("New York","Queens","Kings","Bronx","Richmond") ]
 murders.charges$nyc <- factor(murders.charges$nyc, levels = c(TRUE,FALSE),
                               labels = c("New York City","Other Districts"))
@@ -154,9 +155,10 @@ library(ggplot2)
 rect_dat <- data.table( start = 1995, end_1 = 2004, end_2 = 2007 )
 murders.charges[ ,zone := if(year < 1995) "pre" else if(year < 2006) "during" else "post",
                 by = year]
-ggplot( murders.charges[,list(n_murders = sum(n_murders),
-                              n_pleas = sum(convicted_plea),
-                              n_dispos = sum(total_dispositions)),
+ggplot( murders.charges[!is.na(charge),
+                        list(n_murders = sum(n_murders),
+                             n_pleas = sum(convicted_plea),
+                             n_dispos = sum(total_dispositions)),
                         by="year,zone,nyc,charge"][
                           ,per_pleas := n_pleas / n_dispos ],
         aes(x = year, y = per_pleas, color = charge )) +
@@ -171,8 +173,9 @@ ggplot( murders.charges[,list(n_murders = sum(n_murders),
   theme( legend.position = "none",
          panel.background = element_blank(),
          axis.ticks = element_blank(),
-         axis.text = element_text(size = 11),
-         axis.title = element_text(size = 13),
+         axis.text = element_text(size = 12),
+         axis.title.y = element_text(size = 13),
+         axis.title.x = element_blank(),
          legend.title = element_blank()) 
 
 #add some variables
@@ -206,4 +209,61 @@ ggplot(total.pleas, aes(x = year, y = per_murder_1_total)) +
   geom_rect(data=rect_dat, aes(xmin=start, xmax=end_1), 
             ymin=0, ymax=15, alpha=0.3, fill="grey60", inherit.aes = FALSE) +
   geom_rect(data=rect_dat, aes(xmin=end_1, xmax=end_2), 
-            ymin=0, ymax=15, alpha=0.3, fill="grey80", inherit.aes = FALSE)
+            ymin=0, ymax=15, alpha=0.3, fill="grey80", inherit.aes = FALSE) +
+  theme_bw()
+
+#now percentage of pleas that are for lesser offenses
+pleas.down <- murders.charges[ charge == "murder_1",
+                               list(dispositions = sum(total_dispositions),
+                                    pleas = sum(total_pleas),
+                                    pleas_same = sum(pleas_same),
+                                    pleas_other = sum(pleas_other)),
+                               by="year,nyc,death_status" ][
+                                 ,per_lesser := pleas_other / pleas
+                                 ][ !is.na(per_lesser) ]
+hist(pleas.down$per_lesser)
+ggplot(pleas.down, aes(x = death_status, y = per_lesser)) +
+  geom_boxplot() +
+  geom_point() +
+  facet_wrap( ~ nyc )
+  
+ggplot(pleas.down, aes(x = nyc, y = per_lesser)) +
+  geom_boxplot() +
+  geom_point() +
+  facet_wrap( ~ death_status )
+pleas.down[ ,log_per := log(per_lesser) ]
+summary(aov(log_per ~ death_status * nyc, pleas.down[!is.infinite(log_per)]))
+TukeyHSD(aov(log_per ~ death_status + nyc, pleas.down[!is.infinite(log_per)]))
+
+#look at the percent of all murder charges that are murder 1 charges
+charges.murder <- 
+  murders.charges[!is.na(charge),
+                  list(n_murders = sum(n_murders),
+                       n_charges = sum(total_dispositions)),
+                  by=c("nyc","charge","year","death_status") ]
+charges.murder <- merge( dcast.data.table(charges.murder,
+                                          nyc + year + death_status ~ charge,
+                                          value.var = "n_charges"),
+                         murders.charges[,list(n_murders = sum(n_murders)),by="death_status,nyc,year"],
+                         by=c("year","nyc","death_status") )
+charges.murder[,per_murder_1 := murder_1/sum(c(murder_1,murder_2)),by="year,nyc,death_status" ]
+charges.murder[,log_per_murder_1 := log(per_murder_1) ]
+
+shapiro.test(charges.murder[!death_status == "shady" & !year %in% c(1995) ]$per_murder_1)
+shapiro.test(charges.murder[!death_status == "shady" & !year %in% c(1995) ]$log_per_murder_1)
+
+charges.murder[,statute := factor(year < 1995, levels = c(TRUE,FALSE), labels = c("pre","post")) ]
+
+charges.murder.aov <- 
+  aov( log_per_murder_1 ~ nyc * factor(year),
+       data = charges.murder[ !death_status == "shady" & !year %in% c(1995) ] )
+summary.aov(lm(charges.murder.aov))
+summary(lm(log_per_murder_1 ~ nyc + statute + death_status,
+           charges.murder[ !death_status == "shady" & year != 1995]))
+plot(charges.murder.aov)
+TukeyHSD(aov(log_per_murder_1 ~ death_status + nyc + statute,
+             data = charges.murder[ !death_status == "shady" & year != 1995 ]))
+summary(aov(log_per_murder_1 ~ death_status * n_murders + nyc + factor(year),
+            data = charges.murder[ !death_status == "shady" & year > 1995 ]))
+charges.murder[ ,mean(per_murder_1), by="death_status"]
+
